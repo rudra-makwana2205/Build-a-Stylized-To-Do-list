@@ -1,0 +1,95 @@
+/* Base Layout Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #1a202c;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 480px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+/* List Structure */
+.todo-list,
+.sub-item {
+  list-style-type: none;
+}
+
+.todo-list > li {
+  margin-bottom: 18px;
+  padding: 12px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+label {
+  font-weight: 600;
+  margin-left: 8px;
+  cursor: pointer;
+  color: #334155;
+}
+
+.sub-item {
+  margin-top: 8px;
+  margin-left: 28px;
+}
+
+/* --- Link Styling Requirements --- */
+
+/* User Story 4: Remove default underlines */
+a.sub-item-link {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+/* User Story 5: Unvisited Link Color */
+a.sub-item-link:link {
+  color: #2563eb; /* Clean Royal Blue */
+}
+
+/* User Story 6: Visited Link Color */
+a.sub-item-link:visited {
+  color: #7c3aed; /* Soft Purple */
+}
+
+/* User Story 7: Hover Color */
+a.sub-item-link:hover {
+  color: #059669; /* Emerald Green */
+}
+
+/* User Story 8: Focused Outline */
+a.sub-item-link:focus {
+  outline: 2px dashed #d97706; /* Warm Amber Ring */
+  outline-offset: 3px;
+}
+
+/* User Story 9: Active/Click Color */
+a.sub-item-link:active {
+  color: #dc2626; /* Crimson Red */
+}
